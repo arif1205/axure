@@ -1,0 +1,183 @@
+:root {
+  --main-color: #ff8b38;
+  --fade-color: #86878b;
+}
+
+/* **************************************** */
+/* Including fonts  */
+/* **************************************** */
+
+@font-face {
+  src: url(../fonts/Raleway/Raleway-VariableFont_wght.ttf);
+  font-family: Raleway;
+}
+
+@font-face {
+  src: url(../fonts/Open_Sans/OpenSans-Regular.ttf),
+       url(../fonts/Open_Sans/OpenSans-SemiBold.ttf),
+       url(../fonts/Open_Sans/OpenSans-Bold.ttf),
+       url(../fonts/Open_Sans/OpenSans-BoldItalic.ttf),
+       url(../fonts/Open_Sans/OpenSans-ExtraBold.ttf),
+       url(../fonts/Open_Sans/OpenSans-ExtraBoldItalic.ttf),
+       url(../fonts/Open_Sans/OpenSans-Italic.ttf),
+       url(../fonts/Open_Sans/OpenSans-Light.ttf),
+       url(../fonts/Open_Sans/OpenSans-LightItalic.ttf),
+       url(../fonts/Open_Sans/OpenSans-SemiBoldItalic.ttf);
+  font-family: open_sans;
+}
+
+/* basic css  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  font-family: open_sans;
+  scroll-behavior: smooth;
+}
+
+ul {
+  margin-bottom: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.mb-35 {
+  margin-bottom: 35px;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 0;
+}
+
+.row > div {
+  align-self: center !important;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.py-100 {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+/* Dividers */
+
+.divider {
+  position: relative;
+}
+
+.divider::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70px;
+  height: 2px;
+  background-color: var(--main-color);
+}
+
+.divider--white.divider::after {
+  background-color: #fff;
+  left: 0;
+  transform: translateX(0%);
+}
+
+/* custom download btn  */
+.custom-download-btn {
+  min-width: 135px;
+  border: 1.5px solid white;
+  color: white;
+  border-radius: 0;
+  transition: all .3s;
+}
+
+.custom-download-btn:hover {
+  background: white;
+  border: 1.5px solid white;
+  color: #333;
+  outline: none;
+}
+
+.custom-download-btn-primary {
+  background: var(--main-color);
+  border: 1.5px solid var(--main-color);
+  border-radius: 2px;
+}
+
+.custom-download-btn-primary:hover {
+  background: transparent;
+  border-color: var(--main-color);
+  border-radius: 0;
+}
+
+/* inputs */
+input:not(input[type="submit"]),
+textarea {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #bdbdbd;
+  padding: 10px 15px;
+  font-size: 14px;
+}
+
+input:not(:last-child) {
+  margin-bottom: 35px;
+}
+
+input::placeholder, 
+textarea::placeholder {
+  color: #bdbdbd;
+}
+
+input:not(input[type="submit"]):focus,
+textarea:focus {
+  border-bottom: 1px solid var(--main-color);
+  outline: none;
+}
+
+input[type="submit"] {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 13px 0;
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  background: var(--main-color);
+  text-transform: capitalize;
+}
+
+input[type="submit"]:focus, 
+input[type="submit"]:hover {
+  opacity: 0.8;
+}
+
+/* section header  */
+/* common header of all section */
+.section__header h1 {
+  font-family: Raleway;
+  font-size: 36px;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding-bottom: 35px;
+}
+
+.section__header p {
+  font-size: 14px;
+  color: var(--fade-color);
+}
+

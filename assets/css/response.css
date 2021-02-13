@@ -1,0 +1,122 @@
+@media screen and (max-width: 991px) {
+  .brand-bar__icons ul {
+    margin-right: auto;
+  }
+  .brand-bar__descriptor {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .review__item {
+    padding: 0 10px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header__content {
+    padding: 100px 0;
+  }
+  .container {
+    max-width: 620px !important;
+  }
+  .header__text {
+    margin-bottom: 35px;
+  }
+  .header__sign-up {
+    margin-right: auto;
+  }
+  .tab-content {
+    padding: 0;
+  }
+  .pricing__options__list {
+    width: 75%;
+    margin: auto;
+  }
+  .process__content__item:not(:last-child),
+  .pricing__options__list:not(:last-child),
+  .review__item,
+  .contact__inputs {
+    margin-bottom: 35px;
+  }
+  .review__profile {
+    margin-top: 5px;
+  }
+  textarea {
+    height: 120px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .bars {
+    display: flex !important;
+  }
+
+  .nav__container {
+    position: relative;
+  }
+
+  nav .menu {
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: all .5s;
+  }
+
+  nav ul {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  nav li {
+    display: block;
+    width: 100% !important;
+    margin-right: 0 !important;
+  }
+
+  nav a {
+    display: inline-block !important;
+    width: 100%;
+    text-align: right;
+    padding: 10px 15px;
+    border-bottom: 1px solid white;
+    background-color: black;
+  }
+  .header__text .title {
+    font-size: 28px;
+  }
+  .brand-bar__icons a {
+    font-size: 28px;
+    margin-left: 20px;
+  }
+  .tabs {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 35px;
+    padding: 0 20px;
+  }
+  .tabs div {
+    margin-right: 1px;
+  }
+  
+  .tabs div:first-child {
+    border-top-left-radius: 2px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 2px;
+  }
+
+  .tabs div:last-child {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 2px;
+    border-top-right-radius: 2px;
+  }
+  .tab-content {
+    padding: 0 20px;
+  }
+  .pricing__options__list {
+    width: 85%;
+  }
+  footer li:not(:last-child) {
+    margin-right: 30px !important;
+  }
+}
